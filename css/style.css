@@ -179,44 +179,32 @@ header {
     font-family: 'Montserrat', 'Verdana', sans-serif; 
     font-size: 16px;
     color: #FFFFFF;
-    padding: 0 0 188px 0;
     margin: 0;
-  }
-
-  .bouquet-catalog li::before{
-    content:'';
-    width: 387px;
-    height: 442px;
-    background-color: rgba(174, 124, 120, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
   }
 
   .bouquet-catalog li{
     width: 387px;
-    height: 442px;
     text-align: center;
     border-radius: 10px;
-    position: relative;
     margin-top: 10px;
   }
 
   .bouquet-catalog div{
-      position: relative; 
+    background: rgba(174, 124, 120, 0.6);
+    height: 442px;
+    border-radius: 10px;
   }
 
   .bouquet-catalog li:first-child{
-    background:url('../image/catalog_wedding_bouquet.jpg');
+     background:rgb(228, 223, 219) url('../image/catalog_wedding_bouquet.jpg'); 
   }
 
   .bouquet-catalog li:nth-child(2){
-    background:url('../image/cataloq_pions_bouquet.jpg');
+    background:rgb(226, 188, 152) url('../image/cataloq_pions_bouquet.jpg');
   }
 
   .bouquet-catalog li:last-child{
-    background:url('../image/catalog_choose_bouquet.jpg');
+    background:rgb(227, 227, 227) url('../image/catalog_choose_bouquet.jpg');
   }
 
   .sale div{
@@ -349,6 +337,10 @@ header {
 }
 .contacts__card p:nth-child(odd){
     font-weight: 500;
+}
+
+.contacts__card a{
+    color: #AE7C78;
 }
 
 footer {
