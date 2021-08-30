@@ -1,10 +1,4 @@
 
- /* * {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    }  */
-
 a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 :focus, :active {outline: none;}
@@ -15,32 +9,75 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 body{
     background: #E5E5E5;
 }
-
 .container{
     width: 1440px;
     background:#FFFFFF;
     margin: 0 auto;
+    padding-top: 25px;
 }
-
 section{
     width: 1200px;
     margin: 0 auto;
 } 
-
+header *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
 header {
     font-family: 'Montserrat', 'Verdana', sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
+    border-top:1px solid #AE7C78;
+    border-bottom:1px solid #AE7C78;
+    margin-bottom: 80px;
 }
-
+.header-wrapper{
+    width:1200px;
+    margin: 0 auto; 
+}
+.header-nav{
+position: relative;
+}
+.header-logo{
+position: absolute;
+left: 50%;
+top:55%;
+transform: translate(-50%,-50%);
+} 
+.header-list{
+    display: flex;
+    padding: 22.5px 0;
+    justify-content: space-between;
+}
 .header-list li a{
     color: #AE7C78;
 }
-
+.header-list li:first-child{
+    margin-right: 17px;
+}
+.header-list li:last-child{
+    margin-right: 0;
+}
+.header-list li:nth-child(3){
+    margin-right:0;
+}
+.header-list li:nth-child(4){
+    margin-left:135px;
+}
+.authors-bouquet *{
+    margin:0;
+    padding:0;
+}
+.authors-bouquet{
+display: flex;
+}
 .authors-bouquet h1{
-    font-family: 'Playfair Display', 'Helvetica', serif;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
     font-size: 44px;
     line-height: 59px;
     color: #AE7C78;
+    margin-bottom: 24px;
 }
 .authors-bouquet span{
     font-style: italic;
@@ -50,8 +87,17 @@ header {
     font-size: 24px;
     line-height: 29px;
     color: #AE7C78;
+    margin-bottom: 65px;
+    margin-right: 10px;
 }
+.authors-bouquet div{
+    width:408px;
+}
+.authors-bouquet img:first-of-type{
 
+    align-self: flex-end;
+    margin-right: 20px;
+}
 .authors-bouquet a{
     font-family: 'Montserrat', 'Verdana', sans-serif; 
     font-size: 16px;
@@ -63,6 +109,7 @@ header {
     border-radius: 40px;
     display: inline-block;
     text-align: center;
+    margin-bottom: 118px;
 }
 
 .advantages{
@@ -100,7 +147,7 @@ header {
 }
 
 .popular-bouquet h2{
-    font-family: 'Playfair Display', 'Helvetica', serif;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
     font-weight: 700;
     font-size: 36px;
 }
@@ -166,7 +213,7 @@ header {
   }
 
   .bouquet-catalog h3{
-    font-family: 'Playfair Display', 'Helvetica', serif;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
     font-weight: 700;
     font-size: 36px;
     color: #FFFFFF;
@@ -213,7 +260,7 @@ header {
     color: white;
   }
   .sale h2{
-    font-family: 'Playfair Display', 'Helvetica', serif;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
     font-size: 44px;
     line-height: 59px;
   }
@@ -226,7 +273,7 @@ header {
     color: #AE7C78;
   }
   .ideal-bouquet h2{
-    font-family: 'Playfair Display', 'Helvetica', serif;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
     font-weight: 700;
     font-size: 36px;
   }
@@ -262,13 +309,30 @@ header {
     background:url('../image/advantage_truck.svg') top center no-repeat;
   }
   .news h2{
-    font-family: 'Playfair Display', 'Helvetica', serif;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
     color: #AE7C78;
+    position: relative;
+    z-index: 1;
+     text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0);
+    -webkit-text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0);
+    -moz-text-shadow:0px 1px 0 rgb(0,0,0),0px -1px 0 rgb(0,0,0),1px 0px 0 rgb(0,0,0),-1px 0px 0 rgb(0,0,0),1px 1px 0 rgb(0,0,0),1px -1px 0 rgb(0,0,0),-1px 1px 0 rgb(0,0,0),-1px -1px 0 rgb(0,0,0);
+  } 
+   .news h2::before{
+    content:'Следите за нашими новостями';
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color:transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+    z-index: -1; 
+  } 
   .news p{
     font-family: 'Montserrat', 'Verdana', sans-serif; 
     font-size: 24px;
@@ -276,8 +340,8 @@ header {
     color: #AE7C78;
   }
 .news li{
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 22px;
     display: inline-block;
 }
 .news li:first-child{
@@ -293,7 +357,7 @@ header {
     border: 1px solid rgba(174, 124, 120, 1);
 }
 .reviews h2{
-    font-family: 'Playfair Display', 'Helvetica', serif;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
     font-weight: bold;
     font-size: 36px;
     color: #AE7C78;
@@ -328,7 +392,7 @@ header {
     left: 222px;
 }
 .contacts__card h2{
-    font-family: 'Playfair Display', 'Helvetica', serif;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
     font-weight: bold;
     font-size: 36px;
 }
