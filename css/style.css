@@ -442,7 +442,7 @@ margin-top: 10px;
     grid-template-columns: 488px auto auto;
     grid-template-rows: auto auto;
     column-gap: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 78px;
   }
 
   .news__social{
@@ -538,11 +538,14 @@ margin-top: 10px;
 .reviews{
     border: 1px solid rgba(174, 124, 120, 1);
     text-align: center;
+    padding-top: 42px;
+    padding-bottom: 62px;
+    margin-bottom: 80px;
 }
 
 .reviews ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .reviews h2{
@@ -550,6 +553,7 @@ margin-top: 10px;
     font-weight: bold;
     font-size: 36px;
     color: #AE7C78;
+    margin-bottom: 45px;
    
 }
 .reviews li{
@@ -558,8 +562,14 @@ margin-top: 10px;
     color: #AE7C78;
     width: 300px;
 }
+
+.reviews ul li:nth-child(2){
+    margin: 0 105px; 
+}
+
 .reviews li blockquote{
     line-height: 20px;
+    margin-bottom: 18px;
 }
 .reviews li cite{
     font-weight: 500;
