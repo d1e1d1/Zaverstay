@@ -58,36 +58,37 @@ header {
 }
 
 .header-logo{
+    padding-top: 14px;
     position: absolute;
     left: 50%;
-    top:55%;
-    transform: translate(-50%,-50%);
+    transform: translatex(-50%);
 } 
 
 .header-list{
     display: flex;
-    padding: 22.5px 0;
-    justify-content: space-between;
+    padding: 2px 0;
+    flex-wrap: wrap;
 }
 
 .header-list li a{
     color: #AE7C78;
 }
 
-.header-list li:first-child{
-    margin-right: 17px;
+.header-list li{
+    margin-right: 85px;
+    padding: 20px 0;
+}
+
+.header-list li:nth-child(2){
+    margin-right: 100px;
+}
+
+.header-list li:nth-child(6n+3){
+    margin-right: 240px;
 }
 
 .header-list li:last-child{
     margin-right: 0;
-}
-
-.header-list li:nth-child(3){
-    margin-right:0;
-}
-
-.header-list li:nth-child(4){
-    margin-left:135px;
 }
 
 
@@ -146,8 +147,6 @@ header {
     margin-bottom: 118px;
     width: 285px;
     padding: 31px 5px;
-  
-
 }
 
 
@@ -307,7 +306,6 @@ header {
     margin-top: 65px;
     margin-bottom: 15px;
     padding: 31px 5px;
-
 }
 
 .button-wrapper{
@@ -413,7 +411,6 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 } 
 
 
@@ -668,7 +665,6 @@ header {
 .reviews ul{
     display: flex;
     flex-wrap: wrap;
-  
 }
 
 .reviews h2{
@@ -677,8 +673,8 @@ header {
     font-size: 36px;
   
     margin-bottom: 45px;
-   
 }
+
 .reviews li{
     font-family: 'Montserrat', 'Verdana', sans-serif;
     font-size: 16px;
@@ -718,7 +714,6 @@ header {
     padding-top: 52px;
     padding-left: 222px;
     box-sizing: border-box;
-   
 }
 
 .contacts__card{
@@ -769,7 +764,6 @@ header {
     left:0;
     position: absolute;
     z-index: 1;
-    
 }
 
 
