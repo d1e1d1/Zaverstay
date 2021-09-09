@@ -30,7 +30,19 @@ section{
     margin: -1px;
   }
 
+button{
+    cursor: pointer;
+}
 
+button:hover{
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+a:hover{
+    font-weight:600;
+    letter-spacing:0.5px;
+}
 
 header *{
     margin:0;
@@ -620,6 +632,12 @@ header {
     margin-bottom: 10px;
 }
 
+.social:hover{
+    width: 28px;
+    height: 26px;
+}
+
+
 .social:last-child{
     margin-right: 0;
 }
@@ -632,12 +650,27 @@ header {
     background:url('../image/instagram_icon.svg') center no-repeat;
 }
 
+.news__insta:hover{
+    background:url('../image/instagram_icon.svg') center no-repeat;
+    background-size: cover;
+}
+
 .news__face{
     background:url('../image/facebook_icon.svg') center no-repeat;
 }
 
+.news__face:hover{
+    background:url('../image/facebook_icon.svg') center no-repeat;
+    background-size: contain;
+}
+
 .news__twit{
     background:url('../image/twitter_icon.svg') center no-repeat;
+}
+
+.news__twit:hover{
+    background:url('../image/twitter_icon.svg') center no-repeat;
+    background-size: cover;
 }
 
 
@@ -831,4 +864,20 @@ footer {
 
 .footer__twit{
     background:url('../image/twitter_icon_footer.svg') center no-repeat;
+}
+
+
+.footer__insta:hover{
+    background:url('../image/instagram_icon_footer.svg') center no-repeat;
+    background-size: cover;
+}
+
+.footer__face:hover{
+    background:url('../image/facebook_icon_footer.svg') center no-repeat;
+    background-size: contain;
+}
+
+.footer__twit:hover{
+    background:url('../image/twitter_icon_footer.svg') center no-repeat;
+    background-size: cover;
 }
